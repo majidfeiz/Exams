@@ -1,0 +1,28 @@
+{
+    "name": "majidfeiz/exams",
+    "description": "Exams for laravel",
+    "type": "metapackage",
+    "homepage": "https://github.com/majidfeiz/exams",
+    "support": {
+        "issues": "https://github.com/majidfeiz/exams/issues",
+        "source": "https://github.com/majidfeiz/exams"
+    },
+    "authors": [
+        {
+            "name": "Majid Feiz",
+            "email": "majidfeizidev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/http": "^6|^7|^8.67|^9"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "majidfeiz\\Exams\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

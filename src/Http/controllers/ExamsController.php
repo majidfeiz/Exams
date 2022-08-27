@@ -10,7 +10,12 @@ class ExamsController extends controller
 
     public function index()
     {
-        //
+        return view('exams::list');
+    }
+
+    public function add()
+    {
+        return view('exams::add');
     }
 
     public function show()

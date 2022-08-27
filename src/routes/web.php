@@ -8,6 +8,7 @@ Route::get('test', function(){
 
 Route::prefix('exams')->group(function (){
     Route::get('/',[ExamsController::class,'index'])->name('exams.index');
+    Route::get('add',[ExamsController::class,'add'])->name('exams.add');
     Route::get('/{exam}',[ExamsController::class,'show'])->name('exams.show');
     Route::post('/',[ExamsController::class,'store'])->name('exams.store');
 

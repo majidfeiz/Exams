@@ -14,11 +14,15 @@ class CreateExamsTable extends Migration
     {
         Schema::create('exams', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('lesson_id')->default(0);
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->double('total_score',2);
             $table->bigInteger('start_time');
             $table->bigInteger('end_time');
+            $table->bigInteger('exam_duration_time');
+            $table->text('meta')->nullable();
             $table->integer('random_questions')->default(0);
             $table->integer('status')->default(0);
             $table->timestamps();
